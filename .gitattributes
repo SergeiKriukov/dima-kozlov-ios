@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Language detection for GitHub
+# Mark Swift files as Swift language
+*.swift linguist-language=Swift
+
+# Mark Shell scripts as generated/vendored to reduce their weight
+*.sh linguist-vendored
+optimize_images.sh linguist-generated
+
+# Mark README files as documentation
+README.md linguist-documentation
+*.md linguist-documentation
